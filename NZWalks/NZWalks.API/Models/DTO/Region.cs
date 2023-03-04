@@ -14,6 +14,6 @@ namespace NZWalks.API.Models.DTO
 
 
         //Connections
-        public IEnumerable<Walk> Walks { get; set; }
+        public IEnumerable<Domain.Walk> Walks { get; set; }
     }
 }

@@ -100,11 +100,9 @@ namespace NZWalks.API.Controllers
             return Ok(_regionDTO);
         }
 
-
-
         [HttpPut]
         [Route("{id:guid}")]
-        public async Task<IActionResult> UpdateRegionAsync(Guid id, Models.DTO.RegionUpdateRequest _regionUpdateRequest)
+        public async Task<IActionResult> UpdateRegionAsync(Guid id,  Models.DTO.RegionUpdateRequest _regionUpdateRequest)
         {
             // Convert DTO to Domain model
             var _region = new Models.Domain.Region()
@@ -139,7 +137,11 @@ namespace NZWalks.API.Controllers
                 Population = _region.Population
             };
 
+            //Send dto response back to client
             return Ok(_regionDTO);
         }
+
+
+
     }
 }
