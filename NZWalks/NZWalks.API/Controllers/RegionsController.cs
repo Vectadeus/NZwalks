@@ -141,7 +141,5 @@ namespace NZWalks.API.Controllers
             return Ok(_regionDTO);
         }
 
-
-
     }
 }
